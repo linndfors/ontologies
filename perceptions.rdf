@@ -1,4 +1,6 @@
 <?xml version="1.0"?>
+@prefix ex: <http://example.com/perceptions_ontology#> .
+
 <rdf:RDF xmlns="http://www.semanticweb.org/linndfors/ontologies/2023/11/untitled-ontology-11/"
      xml:base="http://www.semanticweb.org/linndfors/ontologies/2023/11/untitled-ontology-11/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
