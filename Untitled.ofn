@@ -1,0 +1,191 @@
+Prefix(:=<http://www.semanticweb.org/linndfors/ontologies/2023/11/untitled-ontology-18/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/linndfors/ontologies/FB_target>
+
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Activities>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Advertisement>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Application_promotion>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Audience>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Awareness>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Behavior>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Clicks>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Collected_data>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Conversion>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Demographic>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Distance>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Explicit_data>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#FB_Target>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Facebook_audience>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Goal>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Income_level>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Interests>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Involvement>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Lead_generation>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Likes>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Location>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Metadata>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Off-FB_data>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Off-Facebook_audience>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Person>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Personal_information>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Politics_preferences>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Posts>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Reposts>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Sellers>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Target_features>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Third-party_data>))
+Declaration(Class(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Traffic>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/linndfors/ontologies/FB_target#based_on>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/linndfors/ontologies/FB_target#buy>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/linndfors/ontologies/FB_target#contain>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/linndfors/ontologies/FB_target#create>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/linndfors/ontologies/FB_target#has>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/linndfors/ontologies/FB_target#perform>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/linndfors/ontologies/FB_target#produce>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/linndfors/ontologies/FB_target#use>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/linndfors/ontologies/FB_target#has> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#has>)
+
+TransitiveObjectProperty(<http://www.semanticweb.org/linndfors/ontologies/FB_target#has>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Advertisement> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Advertisement>)
+
+EquivalentClasses(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Advertisement> ObjectSomeValuesFrom(<http://www.semanticweb.org/linndfors/ontologies/FB_target#based_on> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Collected_data>))
+EquivalentClasses(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Advertisement> ObjectSomeValuesFrom(<http://www.semanticweb.org/linndfors/ontologies/FB_target#create> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Posts>))
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Application_promotion> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Application_promotion>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Application_promotion> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Goal>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Audience> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Audience>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Audience> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Person>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Awareness> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Awareness>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Awareness> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Goal>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Behavior> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Behavior>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Behavior> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Target_features>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Clicks> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Clicks>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Clicks> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Activities>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Collected_data> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Collected_data>)
+
+EquivalentClasses(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Collected_data> ObjectSomeValuesFrom(<http://www.semanticweb.org/linndfors/ontologies/FB_target#contain> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Personal_information>))
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Conversion> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Conversion>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Conversion> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Goal>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Demographic> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Demographic>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Demographic> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Target_features>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Distance> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Distance>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Distance> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Location>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Explicit_data> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Explicit_data>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Explicit_data> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Collected_data>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#FB_Target> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#FB_Target>)
+
+EquivalentClasses(<http://www.semanticweb.org/linndfors/ontologies/FB_target#FB_Target> ObjectSomeValuesFrom(<http://www.semanticweb.org/linndfors/ontologies/FB_target#has> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Goal>))
+EquivalentClasses(<http://www.semanticweb.org/linndfors/ontologies/FB_target#FB_Target> ObjectSomeValuesFrom(<http://www.semanticweb.org/linndfors/ontologies/FB_target#produce> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Advertisement>))
+EquivalentClasses(<http://www.semanticweb.org/linndfors/ontologies/FB_target#FB_Target> ObjectSomeValuesFrom(<http://www.semanticweb.org/linndfors/ontologies/FB_target#use> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Activities>))
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Facebook_audience> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Facebook_audience>)
+
+EquivalentClasses(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Facebook_audience> ObjectSomeValuesFrom(<http://www.semanticweb.org/linndfors/ontologies/FB_target#perform> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Activities>))
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Facebook_audience> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Audience>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Income_level> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Income_level>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Income_level> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Demographic>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Interests> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Interests>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Interests> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Target_features>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Involvement> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Involvement>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Involvement> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Goal>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Lead_generation> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Lead_generation>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Lead_generation> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Goal>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Likes> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Likes>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Likes> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Activities>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Location> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Location>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Location> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Target_features>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Metadata> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Metadata>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Metadata> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Collected_data>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Off-FB_data> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Off-FB_data>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Off-FB_data> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Collected_data>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Off-Facebook_audience> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Off-Facebook_audience>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Off-Facebook_audience> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Audience>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Person> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Person>)
+
+EquivalentClasses(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Person> ObjectSomeValuesFrom(<http://www.semanticweb.org/linndfors/ontologies/FB_target#has> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Personal_information>))
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Politics_preferences> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Politics_preferences>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Politics_preferences> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Interests>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Posts> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Posts>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Posts> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Activities>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Reposts> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Reposts>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Reposts> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Activities>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Sellers> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Sellers>)
+
+EquivalentClasses(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Sellers> ObjectSomeValuesFrom(<http://www.semanticweb.org/linndfors/ontologies/FB_target#buy> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Advertisement>))
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Sellers> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Person>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Target_features> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Target_features>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Target_features> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Personal_information>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Third-party_data> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Third-party_data>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Third-party_data> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Collected_data>)
+
+# Class: <http://www.semanticweb.org/linndfors/ontologies/FB_target#Traffic> (<http://www.semanticweb.org/linndfors/ontologies/FB_target#Traffic>)
+
+SubClassOf(<http://www.semanticweb.org/linndfors/ontologies/FB_target#Traffic> <http://www.semanticweb.org/linndfors/ontologies/FB_target#Goal>)
+
+
+)
