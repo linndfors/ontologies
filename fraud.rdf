@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42/"
+     xml:base="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/linndfors/ontologies/fraud"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#hasLokal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#hasLokal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#makeTransaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#makeTransaction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#servedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#servedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#bill -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#bill"/>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#card_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#card_id"/>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#id"/>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#name_surname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#name_surname"/>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#phone_number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#phone_number"/>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#place -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#time"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#Customer">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#makeTransaction"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#Transaction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#Local_Card -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#Local_Card">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#card_id"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#name_surname"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#phone_number"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#Transaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#Transaction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#hasLokal"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#Local_Card"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#servedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#Customer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#bill"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#place"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#time"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#Waiter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#Waiter">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#id"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/2024/0/untitled-ontology-42#name_surname"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

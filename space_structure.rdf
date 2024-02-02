@@ -1,0 +1,446 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/linndfors/ontologies/2023/11/untitled-ontology-19/"
+     xml:base="http://www.semanticweb.org/linndfors/ontologies/2023/11/untitled-ontology-19/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:space="http://www.semanticweb.org/linndfors/space#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/linndfors/space"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#hasAccesabitily -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/space#hasAccesabitily">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/linndfors/space#hasProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#hasDesignStyle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/space#hasDesignStyle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/linndfors/space#hasProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#hasMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/space#hasMaterial">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/linndfors/space#hasProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/space#hasProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#hasStructure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/space#hasStructure">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/linndfors/space#hasProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#includeDecor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/space#includeDecor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/linndfors/space#includeProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#includeFurniture -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/space#includeFurniture">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/linndfors/space#includeProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#includeProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/space#includeProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/linndfors/space#color"/>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#num_of_seats -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/linndfors/space#num_of_seats"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Accesability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Accesability"/>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Bar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Bar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Ceilling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Ceilling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Main_structure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#color"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Chair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Chair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Courtyard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Courtyard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Outdoor_space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Decor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Decor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#hasDesignStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/space#Design_Styles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#color"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Design_Styles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Design_Styles"/>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Door -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Door">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Entrances"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Furniture"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/linndfors/space#Window"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Elevators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Elevators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Accesability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Entrances -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Entrances">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Main_structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Floor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Floor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Main_structure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#color"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Furniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Furniture">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#hasDesignStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/space#Design_Styles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#hasMaterial"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/space#Material"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#color"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Glass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Glass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Indoor_space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Indoor_space">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Space"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#hasStructure"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/space#Main_structure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Kitchen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Kitchen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Indoor_space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Main_structure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Main_structure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#hasDesignStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/space#Design_Styles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#hasMaterial"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/space#Material"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#color"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Material"/>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Minimalism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Minimalism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Design_Styles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Modern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Modern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Design_Styles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Outdoor_space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Outdoor_space">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Plant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Plant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Decor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Space">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#hasAccesabitily"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/space#Accesability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#includeDecor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/space#Decor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#includeFurniture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/space#Furniture"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Table -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Table">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Furniture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#num_of_seats"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#WC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#WC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Indoor_space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Walls -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Walls">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Main_structure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/space#color"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Window -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Window">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Entrances"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Furniture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/linndfors/space#Wood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/space#Wood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/space#Material"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/linndfors/space#Ceilling"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/linndfors/space#Entrances"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/linndfors/space#Floor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/linndfors/space#Walls"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
