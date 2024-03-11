@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/linndfors/ontologies/format&amp;concept&amp;emotion#"
-     xml:base="http://www.semanticweb.org/linndfors/ontologies/format&amp;concept&amp;emotion"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/MFOEM-edits.owl#"
+     xml:base="http://purl.obolibrary.org/obo/MFOEM-edits.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -14,28 +14,8 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/linndfors/ontologies/format&amp;concept&amp;emotion">
-        <obo:comment>The Emotion Ontology is an ontology for affective phenomena such as emotions and moods. It was originally developed collaboratively between the Swiss Centre of Affective Sciences and the University at Buffalo. 
-
-It builds on the Ontology of Mental Functioning (MF) and the Basic Formal Ontology (BFO). 
-
-The latest version of the ontology can always be found at http://purl.obolibrary.org/obo/MFOEM.owl.</obo:comment>
-        <dc:contributor>Alison Wright</dc:contributor>
-        <dc:contributor>Barry Smith</dc:contributor>
-        <dc:contributor>Janna Hastings</dc:contributor>
-        <dc:contributor>Kevin Mulligan</dc:contributor>
-        <dc:contributor>Paulina Schenk</dc:contributor>
-        <dc:contributor>Robert West</dc:contributor>
-        <dc:license>https://creativecommons.org/licenses/by/3.0/</dc:license>
-        <dc:title>Emotion Ontology</dc:title>
-        <rdfs:comment>Sources for definitions:
-OCEAS =&gt; Oxford Companion to Emotion and the Affective Sciences, ed. David Sander and Klaus Scherer, Oxford University Press, 2009.
-</rdfs:comment>
-        <rdfs:comment>Sources for terms and synonyms / translations :
--- GRID project vocabulary resources (Cristina Soriano)</rdfs:comment>
-        <rdfs:comment>The ontology is now released as a single merged file with all modules included, built using the ROBOT library&apos;s &apos;merge&apos; function.</rdfs:comment>
-        <rdfs:label>The Emotion Ontology (MFOEM)</rdfs:label>
-        <owl:versionInfo>2022-07-19</owl:versionInfo>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MFOEM/2022-07-19/MFOEM.owl"/>
     </owl:Ontology>
     
 
@@ -935,59 +915,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#has -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#has"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#through -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#through"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#create -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#create"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#include -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#include"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#include -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#include"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#madeOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#madeOf"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#provide -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#provide"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Data properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -1015,24 +942,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#age -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#age"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#amount -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#amount"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#sex -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#sex"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1047,30 +956,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.obolibrary.org/obo/Emotion -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/Emotion">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#has"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/Valence"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#has"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Color"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#has"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Consiquence"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#has"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Reason"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:BFO_0000179>entity</obo:BFO_0000179>
         <obo:BFO_0000180>Entity</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">Julius Caesar</obo:IAO_0000112>
@@ -1531,7 +1416,7 @@ c) in which the relevant part of the environment is thereby represented to the o
     <!-- http://purl.obolibrary.org/obo/first -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/first">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#frequency"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Frequency"/>
         <obo:BFO_0000179>occurrent</obo:BFO_0000179>
         <obo:BFO_0000180>Occurrent</obo:BFO_0000180>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: every occurrent that is not a temporal or spatiotemporal region is s-dependent on some independent continuant that is not a spatial region</obo:IAO_0000116>
@@ -1546,6 +1431,25 @@ c) in which the relevant part of the environment is thereby represented to the o
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">first</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/first"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">Occurrent doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process.</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000006"/>
+        <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/first"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget>Simons uses different terminology for relations of occurrents to regions: Denote the spatio-temporal location of a given occurrent e by &apos;spn[e]&apos; and call this region its span. We may say an occurrent is at its span, in any larger region, and covers any smaller region. Now suppose we have fixed a frame of reference so that we can speak not merely of spatio-temporal but also of spatial regions (places) and temporal regions (times). The spread of an occurrent, (relative to a frame of reference) is the space it exactly occupies, and its spell is likewise the time it exactly occupies. We write &apos;spr[e]&apos; and `spl[e]&apos; respectively for the spread and spell of e, omitting mention of the frame.</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000012"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/first"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies_temporal_region or occupies_spatiotemporal_region. (axiom label in BFO2 Reference: [077-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/077-002"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/first"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
@@ -1570,25 +1474,6 @@ c) in which the relevant part of the environment is thereby represented to the o
         <owl:annotatedTarget>(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/079-001"/>
     </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/first"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <owl:annotatedTarget xml:lang="en">Occurrent doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process.</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000006"/>
-        <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/first"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <owl:annotatedTarget>Simons uses different terminology for relations of occurrents to regions: Denote the spatio-temporal location of a given occurrent e by &apos;spn[e]&apos; and call this region its span. We may say an occurrent is at its span, in any larger region, and covers any smaller region. Now suppose we have fixed a frame of reference so that we can speak not merely of spatio-temporal but also of spatial regions (places) and temporal regions (times). The spread of an occurrent, (relative to a frame of reference) is the space it exactly occupies, and its spell is likewise the time it exactly occupies. We write &apos;spr[e]&apos; and `spl[e]&apos; respectively for the spread and spell of e, omitting mention of the frame.</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000012"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/first"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <owl:annotatedTarget xml:lang="en">An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies_temporal_region or occupies_spatiotemporal_region. (axiom label in BFO2 Reference: [077-002])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/077-002"/>
-    </owl:Axiom>
     
 
 
@@ -1608,7 +1493,7 @@ c) in which the relevant part of the environment is thereby represented to the o
     <!-- http://purl.obolibrary.org/obo/mental_process -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/mental_process">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Consiquence"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Сonsiquence"/>
         <obo:IAO_0000115>A bodily process that occurs in the brain, and that can of itself be conscious, or can give rise to a process that can of itself be conscious or can give rise to behaviour.</obo:IAO_0000115>
         <rdfs:comment>A &apos;mental process&apos; is a subclass of &apos;bodily process&apos;, as mental processes occur within the body, specifically involving the brain.</rdfs:comment>
         <rdfs:comment>A bodily process which brings into being, sustains or modifies a cognitive representation or a behavior inducing state.</rdfs:comment>
@@ -1623,7 +1508,7 @@ c) in which the relevant part of the environment is thereby represented to the o
     <!-- http://purl.obolibrary.org/obo/physiological_process -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/physiological_process">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Consiquence"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Сonsiquence"/>
         <obo:IAO_0000115>A bodily process that encompasses all the neurophysiological changes accompanying an emotion, which take place in the central nervous system (CNS), neuro-endocrine system (NES) and autonomous nervous system (ANS).</obo:IAO_0000115>
         <obo:IAO_0000118>physiological response to emotion process</obo:IAO_0000118>
         <rdfs:label>physiological</rdfs:label>
@@ -1701,118 +1586,64 @@ c) in which the relevant part of the environment is thereby represented to the s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Action -->
+    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Concept -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Action">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Reason"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Reason"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Concept">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#effect"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Black -->
+    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Event -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Black">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Color"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Event">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#action"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Blue -->
+    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Food -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Blue">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Color"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Food">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#object"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Brown -->
+    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Frequency -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Brown">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Color"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Frequency">
+        <rdfs:label>frequency</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Color -->
+    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Person -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Color"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Consiquence -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Consiquence"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Emoticon -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Emoticon"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Green -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Green">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Color"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Person">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#effect"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Grey -->
+    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Place -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Grey">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Color"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Pink -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Pink">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Color"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Place">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#object"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Reason -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Reason">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Subjective"/>
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Organization"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Reason"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Red -->
+    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#action -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Red">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Color"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Subjective -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Subjective">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#action">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Reason"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#White -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#White">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Color"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Yellow -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Yellow">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Color"/>
     </owl:Class>
     
 
@@ -1820,15 +1651,15 @@ c) in which the relevant part of the environment is thereby represented to the s
     <!-- http://purl.obolibrary.org/obo/MFOEM.owl#behaviorular -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#behaviorular">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Consiquence"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Сonsiquence"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#frequency -->
+    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#effect -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#frequency">
-        <rdfs:label>frequency</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#effect">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Reason"/>
     </owl:Class>
     
 
@@ -1859,6 +1690,14 @@ c) in which the relevant part of the environment is thereby represented to the s
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#object -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#object">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Reason"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFOEM.owl#repeat_order -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#repeat_order">
@@ -1871,7 +1710,7 @@ c) in which the relevant part of the environment is thereby represented to the s
     <!-- http://purl.obolibrary.org/obo/MFOEM.owl#repeated -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#repeated">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#frequency"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Frequency"/>
         <rdfs:label>repeated</rdfs:label>
     </owl:Class>
     
@@ -1885,6 +1724,14 @@ c) in which the relevant part of the environment is thereby represented to the s
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#subjective -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#subjective">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#Reason"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFOEM.owl#vigilance -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#vigilance">
@@ -1894,418 +1741,9 @@ c) in which the relevant part of the environment is thereby represented to the s
     
 
 
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Atmosphere -->
+    <!-- http://purl.obolibrary.org/obo/MFOEM.owl#Сonsiquence -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Atmosphere"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Business -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Business"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Concept -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Concept">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#create"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Format"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#create"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Market"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Business"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Idea"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Mission"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Values"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Format"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Expectations -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Expectations"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Experience -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Experience">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#create"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Expectations"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Format -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Format">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#create"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Impression"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Atmosphere"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Product"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Scenario"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Staff"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Idea -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Idea"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Impression -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Impression">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#create"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Experience"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Mood"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Mission -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Mission"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Mood -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Mood"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Product -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Product"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Scenario -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Scenario"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Staff -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Staff"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Values -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Values"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Address -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Address">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Location"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Behavior -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Behavior"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Client_Profiles -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Client_Profiles">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Office_Workers"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Students"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#madeOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Customer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#amount"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Competition -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Competition">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Trend"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Competitor -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Competitor"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Customer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Customer">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#age"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#sex"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Global_Market_Entry -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Global_Market_Entry">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Goal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Goal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Goal"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Goods -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Goods"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Inflation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Inflation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Trend"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Interests -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Interests"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Location -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Location"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Location_Profile -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Location_Profile">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Location"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Market -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Market"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Market_Participant -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Market_Participant">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Client_Profiles"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Competitor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Organization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Partners"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#include"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Suppliers"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Office_Workers -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Office_Workers"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Organization -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Organization">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#provide"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Goods"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Partners -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Partners"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Product -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Product">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Goods"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Product_differentiation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Product_differentiation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Goal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Relationship_Status -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Relationship_Status"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Service -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Service">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/linndfors/ontologies/market#Goods"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Students -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Students"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Suppliers -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Suppliers"/>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/market#Trend -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/linndfors/ontologies/market#Trend"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#Сonsiquence"/>
     
 
 
@@ -2317,6 +1755,27 @@ c) in which the relevant part of the environment is thereby represented to the s
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000002 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000002">
+        <obo:IAO_0000111 xml:lang="en">example to be eventually removed</obo:IAO_0000111>
+        <rdfs:label xml:lang="en">example to be eventually removed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000103 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000103">
+        <obo:IAO_0000111 xml:lang="en">failed exploratory term</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job</obo:IAO_0000115>
+        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">failed exploratory term</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
@@ -2381,6 +1840,20 @@ c) in which the relevant part of the environment is thereby represented to the s
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000224 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000224">
+        <obo:IAO_0000115 xml:lang="en">Core is an instance of a grouping of terms from an ontology or ontologies. It is used by the ontology to identify main classes.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
+        <rdfs:label xml:lang="en">core</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete_core</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000226 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000226">
@@ -2420,6 +1893,54 @@ c) in which the relevant part of the environment is thereby represented to the s
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000410 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000410">
+        <obo:IAO_0000111 xml:lang="en">universal</obo:IAO_0000111>
+        <obo:IAO_0000116>Hard to give a definition for. Intuitively a &quot;natural kind&quot; rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Hard to give a definition for. Intuitively a &quot;natural kind&quot; rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents.</obo:IAO_0000116>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119>A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf</obo:IAO_0000119>
+        <rdfs:label>universal</rdfs:label>
+        <rdfs:label xml:lang="en">universal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000420 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000420">
+        <obo:IAO_0000111 xml:lang="en">defined class</obo:IAO_0000111>
+        <obo:IAO_0000115>A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal</obo:IAO_0000115>
+        <obo:IAO_0000116>&quot;definitions&quot;, in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">&quot;definitions&quot;, in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal.</obo:IAO_0000116>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:label>defined class</rdfs:label>
+        <rdfs:label xml:lang="en">defined class</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000421 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000421">
+        <obo:IAO_0000111 xml:lang="en">named class expression</obo:IAO_0000111>
+        <obo:IAO_0000115>A named class expression is a logical expression that is given a name. The name can be used in place of the expression.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A named class expression is a logical expression that is given a name. The name can be used in place of the expression.</obo:IAO_0000115>
+        <obo:IAO_0000116>named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions</obo:IAO_0000116>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <rdfs:label>named class expression</rdfs:label>
+        <rdfs:label xml:lang="en">named class expression</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000423 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000423">
@@ -2444,6 +1965,19 @@ c) in which the relevant part of the environment is thereby represented to the s
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMO_0001000 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OMO_0001000">
+        <obo:IAO_0000115 xml:lang="en">The term was added to the ontology on the assumption it was in scope, but it turned out later that it was not.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/77</obo:IAO_0000233>
+        <obo:IAO_0000234>https://orcid.org/0000-0001-5208-3432</obo:IAO_0000234>
+        <rdfs:label>out of scope</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MFOEM.owl#emotion -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/MFOEM.owl#emotion">
@@ -2451,30 +1985,6 @@ c) in which the relevant part of the environment is thereby represented to the s
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/MFOEM.owl#repeated"/>
         <MFOEM:intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</MFOEM:intensity>
         <MFOEM:n_of_times rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</MFOEM:n_of_times>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Good -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Good">
-        <rdf:type rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Expectations"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Interested -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Interested">
-        <rdf:type rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Mood"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/linndfors/ontologies/format#Positive -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/linndfors/ontologies/format#Positive">
-        <rdf:type rdf:resource="http://www.semanticweb.org/linndfors/ontologies/format#Experience"/>
     </owl:NamedIndividual>
     
 
